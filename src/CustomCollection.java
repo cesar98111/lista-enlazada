@@ -30,4 +30,15 @@ public class CustomCollection {
     public void add(Object element){
         insert(element,length);
     }
+    public int search(Object element){
+        for (int i = 0; i < length; i++) {
+            if(data[i].equals(element)){
+                return i;
+            }
+
+
+
+        }
+        return -1;
+    }
 }
