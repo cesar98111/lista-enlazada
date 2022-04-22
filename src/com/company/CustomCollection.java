@@ -3,11 +3,15 @@ package com.company;
 import java.util.Arrays;
 
 public class CustomCollection {
+    private static final int DEFAULT_CAPACITY = 5;
     private Object data[] = null;
     private int length =0;
 
     public CustomCollection(int initialCapacity){
         data = new Object[initialCapacity];
+    }
+    public CustomCollection(){
+        data = new Object[DEFAULT_CAPACITY];
     }
     public Object getElement(int position){
         return data[position];

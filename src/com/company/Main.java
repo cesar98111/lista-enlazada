@@ -3,7 +3,8 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        CustomCollection cola=new CustomCollection(5);
+        CustomCollection cola=new CustomCollection();
+        System.out.println(cola);
         cola.add("hola");
         cola.add("caca");
         cola.add("tifon");
