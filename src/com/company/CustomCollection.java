@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class CustomCollection {
     private Object data[] = null;
     private int length =0;
@@ -38,8 +40,6 @@ public class CustomCollection {
                 return i;
             }
 
-
-
         }
         return -1;
     }
@@ -53,4 +53,18 @@ public class CustomCollection {
         length--;
         return aux;
     }
-}
+
+    @Override
+    public String toString() {
+        if (length==0){
+            return "<Empty>";
+        }
+            String out="";
+            for (int i = 0; i < length; i++) {
+                    out+=getElement(i)+",";
+                }
+                return out;
+
+        }
+    }
+
