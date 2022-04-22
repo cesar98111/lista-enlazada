@@ -1,3 +1,5 @@
+package com.company;
+
 public class CustomCollection {
     private Object data[] = null;
     private int length =0;
@@ -40,5 +42,15 @@ public class CustomCollection {
 
         }
         return -1;
+    }
+    public Object delete(int position){
+        Object aux = data[position];
+
+        for(int i= position; i< length -1; i++){
+            data[i]=data[i+1];
+        }
+        data[length-1]=null;
+        length--;
+        return aux;
     }
 }
