@@ -47,7 +47,7 @@ public class GenericCollection <T>{
         }
         data[length-1]=null;
         length--;
-        return aux;
+        return (T)aux;
     }
 
     @Override
