@@ -15,13 +15,23 @@ public class Main {
 
             System.out.println(cola);
 */
-        GenericStack<String> miPila = new GenericStack<String>();
+       /* GenericStack<String> miPila = new GenericStack<String>();
 
         miPila.push("el quijote");
         miPila.push("el pricipe de la niebla");
         miPila.push("cisne negro");
 
         System.out.println(miPila.pop());
+*/
+        GenericQueue<String> cola = new GenericQueue<String>();
+
+        cola.enQueue("hola");
+        cola.enQueue("mi libro");
+        cola.enQueue("pato");
+
+        System.out.println(cola.deQueue());
+        System.out.println(cola.deQueue());
+
 
 
 

@@ -10,7 +10,7 @@ public class GenericCollection <T>{
     public T getElement(int position){
         return (T)data[position];
     }
-    public int Length() {return length;}
+    public int length() {return length;}
     public void insert(T element, int position){
         if(length == data.length){
             Object []aux = data;
