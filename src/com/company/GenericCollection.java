@@ -39,7 +39,7 @@ public class GenericCollection <T>{
         }
         return -1;
     }
-    public Object delete(int position){
+    public T delete(int position){
         Object aux = data[position];
 
         for(int i= position; i< length -1; i++){
